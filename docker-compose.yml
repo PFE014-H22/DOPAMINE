@@ -3,7 +3,7 @@ version: "3.4"
 services:
     frontend:
         image: frontend
-        command: npm run start:prod
+        command: npm run start:dev
         depends_on:
             - backend
         build:
@@ -11,7 +11,7 @@ services:
             dockerfile: ./Dockerfile
         environment:
             PROXY_API: http://backend:3001
-            NODE_ENV: production
+            NODE_ENV: development
         ports:
             - 3000:3000
         volumes:
@@ -19,7 +19,7 @@ services:
             - node_modules:/usr/src/app/node_modules
     backend:
         image: backend
-        command: gunicorn --bind 0.0.0.0:3001 main:app
+        command: gunicorn --bind 0.0.0.0:3001 main:app --reload
         environment:
             - STACK_OVERFLOW_ANSWERS_FILTER="!6VvPDzQywl)na"
         build:
