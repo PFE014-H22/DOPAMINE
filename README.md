@@ -26,9 +26,9 @@ docker compose build
 docker compose up
 ```
 
-## Add contributions
+## To contribute to the project
 
-The `backend` and `frontend` folders have their respective repository and are added to this as git submodules ([to learn more about submodules](https://git-scm.com/book/en/v2/Git-Tools-Submodules)).
+The `backend` and `frontend` folders have their respective repository and are added to this repository as git submodules ([to learn more about submodules](https://git-scm.com/book/en/v2/Git-Tools-Submodules)).
 
 1. Make your changes in the specific repository then push the changes
 
