@@ -35,6 +35,9 @@ The `backend` and `frontend` folders have their respective repository and are ad
 2. Once the repos is stable run this command to add the changes to the DOPAMine repo
 ```sh
 git submodule update --remote
+git add .
+git commit -m "Update message"
+git push
 ```
 > Currently, this command will fetch changes pushed on develop for both submodules. To change the watched branch, you can execute this command 
 ```sh
