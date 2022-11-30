@@ -40,7 +40,7 @@ git commit -m "Update message"
 git push
 docker compose build
 ```
-> Currently, this command will fetch changes pushed on develop for both submodules. To change the watched branch, you can execute this command 
+> Currently, this command will fetch changes pushed on main for both submodules. To change the watched branch, you can execute this command 
 ```sh
 git config -f .gitmodules submodule.[module_name].branch [branch_name]
 ```
