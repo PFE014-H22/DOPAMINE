@@ -44,4 +44,20 @@ docker compose build
 ```sh
 git config -f .gitmodules submodule.[module_name].branch [branch_name]
 ```
-> ex : `git config -f .gitmodules submodule.backend.branch develop`
+ex : `git config -f .gitmodules submodule.backend.branch develop`
+
+then : `git submodule update --remote`
+
+## Troubleshooting
+
+### Missing changes
+
+If changes are missing, try rebuilding the container without any caches
+
+```
+docker compose build --no-cache
+```
+
+### Missing environment variables
+
+Environment variables needs to be set in the `./docker-compose.yml` file of `DOPAMine` also if not running single container.
