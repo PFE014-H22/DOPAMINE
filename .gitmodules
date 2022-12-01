@@ -1,8 +1,8 @@
 [submodule "backend"]
 	path = backend
-	url = git@github.com:PFE014-H22/backend.git
+	url = https://github.com/PFE014-H22/backend.git
 	branch = main
 [submodule "frontend"]
 	path = frontend
-	url = git@github.com:PFE014-H22/frontend.git
+	url = https://github.com/PFE014-H22/frontend.git
 	branch = main
